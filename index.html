@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>傻宝宝</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name='renderer' content='webkit'>
+		<meta http-equiv='X-UA-Compatible' content='IE=Edge,chrome=1' >
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="email=no">
+		<style type="text/css">
+			.banner1{
+    width:234px;
+    height:34px;
+    border-radius:40px;
+    position:absolute;
+    top:400px;
+    left:600px;
+}
+.banner1 a{
+    display:inline-block;
+    width:30px;
+    height:30px;
+    line-height:30px;
+    border-radius:50%;
+    border:2px solid lightblue;
+    position:absolute;
+    left:0px;top:0px;
+    background:lightgreen;
+    color:#222;
+    text-align:center;
+    text-decoration:none;
+    cursor:pointer;
+    z-index:2;
+}
+.banner1 a:hover + span{
+    -webkit-transform:translateX(40px);
+    opacity:1;
+}
+.banner1 span{
+    display:inline-block;
+    width:auto;
+    padding:0 20px;
+    height:30px;line-height:30px;
+    background:lightblue;
+    border-radius:30px;
+    text-align: center;
+    color:#fff;
+    position:absolute;
+    top:2px;
+    opacity:0;
+    -webkit-transition:all 1s;
+    -webkit-transform:translateX(80px);
+}
+		</style>>
+	</head>
+	<body background="background.jpg">
+		<embed src="bgmusic.mp3" hidden="true" type=audio/mpeg loop="true" autostart="true" volume="0"/>
+		<div class="banner1">
+    <a href="">菲</a>
+    <span>傻宝宝，我只爱你一个鸭</span>
+        </div>
+		<!--雪花容器-->
+		<div class="snow">
+		</div>
+		<script src="jquery-1.11.3.min.js"></script>
+		<script src="snow.js"></script>
+		<script type="text/javascript">
+			//调用demo
+			$('.snow').snow();
+		</script>
+	</body>
+</html>
